@@ -46,9 +46,9 @@ export default function Blog() {
     if (!scrollContainer) return;
 
     const scrollWidth = scrollContainer.scrollWidth - scrollContainer.clientWidth;
-    console.log("Scroll Width:", scrollWidth);  // Debugging
+    console.log("Scroll Width:", scrollWidth); // Debugging
 
-    let scrollInterval = setInterval(() => {
+    const scrollInterval = setInterval(() => {
       // Scroll the container by 1px to the right
       if (scrollContainer.scrollLeft >= scrollWidth) {
         scrollContainer.scrollLeft = 0; // Reset to the beginning when it reaches the end
